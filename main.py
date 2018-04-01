@@ -36,6 +36,12 @@ async def kick(ctx, userName : discord.User):
 async def ban(ctx, userName : discord.User):
     await client.ban(userName)
     await client.say("{} has been banned. :white_check_mark:".format(userName))
+
+
+@client.command(pass_context=True)
+async def unban(ctx, userName : discord.User):
+    await client.unban(userName)
+    await client.say("{} has been unbanned. :white_check_mark:".format(userName))
         
         
     
