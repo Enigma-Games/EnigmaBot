@@ -20,6 +20,6 @@ We do not have a license due to the fact that this code cannot be reproduced in 
 
 ## Acknowledgments
 
-- [FoggyIO](https://github.com/FoggyIO/DiscordPythonBots) for getting me started with discord.py.
+- [FoggyIO](https://github.com/FoggyIO/DiscordPythonBots) for getting us started with discord.py.
 
-- [Hades](https://github.com/hades-99) for constantly providing me code help whenever I needed it, and for pointing out my silly syntax errors.
+- [Hades](https://github.com/hades-99) for constantly providing us code help whenever we needed it, and for pointing out our silly syntax errors.
