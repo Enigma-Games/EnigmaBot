@@ -129,4 +129,4 @@ async def pokedex2(ctx, theString : str):
     
 
     
-client.run("NDI5ODA5MjYzNTUzMDE5OTQ0.DaHCww.dmDuIr3MXON3t2ROEV79qt2xEzY")
+client.run("The Token")
