@@ -90,7 +90,12 @@ async def unban(ctx, userName : discord.User):
 
 
 @client.command(pass_context=True)
-async def pokedex(ctx, theString : str):
+async def pokedex(ctx, theString: str):
+    pokemon_name = pokes.get_pokemon_by_name(theString)
+    await client.say(pokemon_name)
+
+@client.command(pass_context=True)
+async def pokedex2(ctx, theString : str):
     if theString == 'categories':
         categories = ["Starter","Legendary","Mythical","Ultra Beast","Mega"]
         await client.say(", ".join(categories))
