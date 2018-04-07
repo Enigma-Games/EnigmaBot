@@ -16,21 +16,6 @@ pokes = pokedex.Pokedex(version="V1", user_agent="TheEBBGaming#4633 and Futurist
 async def on_ready():
     print("ENIGMA'S AUTOMATION IS READY TO ROLL!")
     print("Pokedex.py loaded up.")
-    
-    
-
-
-
-@client.event
-async def on_command_error(ctx, error:discord.ext.commands.CommandError):
-    errorid = False
-    hasargs = False
-    if isinstance(error,commands.MissingRequiredArgument):
-        tprint("User did not provide enough arguments:")
-        scui(ctx.guild,ctx.channel,ctx.author)
-        errorid = True
-        hasargs = True
-        await client.ctx.send_message(ctx.message.channel, ":warning: **You haven't provided enough arguments!**.")
 
 
 @client.command(pass_context=True)
@@ -90,9 +75,13 @@ async def unban(ctx, userName : discord.User):
 
 
 @client.command(pass_context=True)
-async def pokedex(ctx, theString: str):
+async def pokedex(ctx, theString : str):
     pokemon_name = pokes.get_pokemon_by_name(theString)
-    await client.say(pokemon_name)
+    for form in pokemon_name:
+        embedPokedex = discord.Embed(title=form['name'] + " " + form['number'], description="*The " + form['species'] + " Pokémon*", color=0x7289da)
+        embedPokedex.add_field(name="Types:", value=", ".join(form['types']), inline=False)
+        await client.say(embed=embedPokedex)
+    
 
 @client.command(pass_context=True)
 async def pokedex2(ctx, theString : str):
