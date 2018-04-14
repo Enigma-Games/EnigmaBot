@@ -16,6 +16,7 @@ We do not have a license due to the fact that this code cannot be reproduced in 
 ## Built with
 
 [discord.py](https://github.com/Rapptz/discord.py)
+
 [Python 3.6 and IDLE](https://python.org)
 
 ## Acknowledgments
