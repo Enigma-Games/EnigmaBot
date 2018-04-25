@@ -3,11 +3,10 @@ This code is created by the Enigma owners (Futuristick#7622 and TheEBBGaming#463
 
 This code is not to be reproduced or edited in any way without written permission from the owners.
 
-Don't even try copying this code to be used anywhere else. It is hard coded to only run on official Enigma servers.
 
 ## Hosting
 
-This bot is hosted on [Heroku](https://www.heroku.com).
+Hosting is not yet set up as the bot is still in its alpha stages.
 
 ## Licensing
 
